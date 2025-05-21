@@ -98,6 +98,11 @@ sudo apt-get install jenkins -y
 ```bash
 sudo systemctl stop jenkins
 ```
+# Remove jenkins directory
+```bash
+cd /var/lib/
+sudo rm -rf /jenkins
+```
 
 # Download backup from S3
 ```bash
