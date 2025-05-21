@@ -117,3 +117,18 @@ sudo tar -zxvf jenkins_backup.tar.gz -C /
 sudo apt update
 sudo systemctl start jenkins
 ```
+# Thinkback up
+make backup directory 
+```bash
+sudo mkdir -p /var/lib/jenkins/backup
+```
+Give permission
+
+```bash
+sudo chmod a+w /var/lib/jenkins/backup
+```
+or
+
+```bash
+sudo chmod 777 /var/lib/jenkins/backup
+```
