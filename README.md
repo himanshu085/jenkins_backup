@@ -1,5 +1,35 @@
 # jenkins_backup
 
+🚀 Launch Two EC2 Instances with S3 Access
+1. Create an IAM Role with S3 Full Access
+Navigate to the AWS IAM console.
+
+Create a new role with the following settings:
+
+Trusted entity: AWS service
+
+Use case: EC2
+
+Permissions: Attach the AmazonS3FullAccess policy
+
+Name the role (e.g., JenkinsS3AccessRole) and create it.
+
+Configure your AWS Credential
+
+2. Launch Two EC2 Instances
+Go to the EC2 dashboard and launch two instances:
+
+AMI: Choose an appropriate Amazon Machine Image (e.g., Ubuntu 20.04)
+
+Instance Type: Select based on your requirements (e.g., t2.micro)
+
+IAM Role: Attach the previously created JenkinsS3AccessRole
+
+Complete the remaining steps and launch the instances.
+
+Configure your AWS Credential
+
+
 # Update and install Java
 ```bash
 sudo apt update
