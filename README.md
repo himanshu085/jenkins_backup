@@ -70,11 +70,11 @@ sudo tar -czpf jenkins_backup.tar.gz /var/lib/jenkins/
 ```
 # Upload backup to S3
 ```bash
-aws s3 cp jenkins_backup.tar.gz s3://jenkinsbackup085/
+aws s3 cp jenkins_backup.tar.gz s3://jenkinsbackup0085/
 ```
 # Verify backup in S3
 ```bash
-aws s3 ls s3://jenkinsbackup085/
+aws s3 ls s3://jenkinsbackup0085/
 ```
 
 # Install Jenkins same as above
@@ -106,7 +106,7 @@ sudo rm -rf /jenkins
 
 # Download backup from S3
 ```bash
-aws s3 cp s3://jenkinsbackup085/jenkins_backup.tar.gz jenkins_backup.tar.gz
+aws s3 cp s3://jenkinsbackup0085/jenkins_backup.tar.gz jenkins_backup.tar.gz
 ```
 # Extract backup to root (will restore to /var/lib/jenkins)
 ```bash
